@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="box">
+        
+    </div>
+
+    <script>
+        var images = [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-YTaXf90G-8IWx6llFRzjmm0ctLDUlzwKg&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07OIwBuPyXWjyuv0WTYzSSZADZ0ngTzHQKKVkbapUyQiIN7fz0ZpuuwIGY8K6StaGOWc&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6pD_AVr3q-yTEilDZ8-m0mwEHaJiGK7YlA&usqp=CAU'
+        ];
+
+        placeImages(images);
+
+        function placeImages(images){
+            for (const im of images) {
+                document.getElementById("box").innerHTML += `<img class="myImg" src="${im}" alt="картинка">\n`;
+            }
+        }
+        
+    </script>
+</body>
+</html>
